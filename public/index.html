@@ -1,0 +1,91 @@
+<html>
+<head>
+  <!-- Include necessary CSS dependencies -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Chakra Petch' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <title>Hot Takes</title>
+  <style>
+   input {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.button {
+  background-color: #333333;
+  border: none;
+  color: white;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  border-radius: 59px;
+}
+img{
+width: 100%;
+height: 20%;
+object-fit: contain;
+}
+html{
+  background-color: black;
+  font-family: 'Inter';
+  width: 100%;
+  height: 100%;
+  
+  
+}
+p{
+
+  padding-right: 30px;
+  
+  padding-left:30px;
+}
+
+  </style>
+  
+</head>
+<body style="background-color:black;">
+  <br>
+  <br>
+  <br>
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-firestore.js"></script>
+
+
+  <br>
+  <div class="has-text-centered">
+  <figure class="is-inline-block"> <img src="Logo_main.png" height="80%" width="80%"></figure>
+</div>
+  <!-- <p style="color: white; size: 18;  text-align: center; font-weight: 700; font-family: inter">THE SOCIAL REVIEW PLATFORM</p> -->
+  <!-- <br>
+  <br> -->
+  <p style="color: white; size: 27; font-weight: bold; text-align: center; " id="join">Join the waitlist for early access.</p>
+ 
+  <div class="del control is-centered " style="text-align: center;">
+    
+    <input style="width:250px;"  id="pun" type="tel" placeholder="Enter your phone number" maxlength="10">
+   
+  </div>
+  <br>
+  <div class="del control is-centered" style="text-align: center;">
+    <button class="button" onclick="storeData()">Request access</button>
+  </div>
+  
+
+  <!-- Include the JavaScript file -->
+  <script src="index.js"></script>
+</body>
+</html>
