@@ -11,29 +11,7 @@
 <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
   <title>Hot Takes</title>
   <style>
-   input {
-  background-color: black;
-  color: white;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-.button {
-  background-color: #333333;
-  border: none;
-  color: white;
-  
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  border-radius: 59px;
-}
+
 img{
 width: 100%;
 height: 20%;
@@ -44,8 +22,6 @@ html{
   font-family: 'Inter';
   width: 100%;
   height: 100%;
-  
-  
 }
 .navbar {
   background-color: hsla(0, 0%, 37%, 0.267);
@@ -53,12 +29,17 @@ html{
 .navbar-item {
   color: hsl(0, 0%, 100%);
 }
-p{
-
+*:is(p, h1, h2){
   padding-right: 30px;
-  
   padding-left:30px;
+  padding-bottom:30px;
+  color: white; size: 27;
+  text-align: center;
 }
+*:is(h1, h2){
+  text-align: center;
+}
+
 
   </style>
   
@@ -83,32 +64,17 @@ p{
   <br>
   <br>
   <br>
-  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-firestore.js"></script>
-
-
 
   <br>
   <div class="has-text-centered">
-  <figure class="is-inline-block"> <img src="Logo_main.png" height="80%" width="80%"></figure>
+  <!-- <figure class="is-inline-block"> <img src="Logo_main.png" height="80%" width="80%"></figure> -->
 </div>
   <!-- <p style="color: white; size: 18;  text-align: center; font-weight: 700; font-family: inter">THE SOCIAL REVIEW PLATFORM</p> -->
   <!-- <br>
   <br> -->
-  <p style="color: white; size: 27; font-weight: bold; text-align: center; " id="join">Join the waitlist for early access.</p>
- 
-  <div class="del control is-centered " style="text-align: center;">
-    
-    <input style="width:250px;"  id="pun" type="tel" placeholder="Enter your phone number" maxlength="10">
-   
-  </div>
-  <br>
-  <div class="del control is-centered" style="text-align: center;">
-    <button class="button" onclick="storeData()">Request access</button>
-  </div>
-  
-
-  <!-- Include the JavaScript file -->
-  <script src="index.js"></script>
+  <h1>Support</h1>
+    <p>
+      For support or inquiries, please email <a href="mailto:hello@hottakes.social">hello@hottakes.social</a>
+    </p>
 </body>
 </html>
