@@ -2,13 +2,15 @@
 <head>
   <!-- Include necessary CSS dependencies -->
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link href='https://fonts.googleapis.com/css?family=Chakra Petch' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <title>Hot Takes</title>
   <style>
 
@@ -31,6 +33,7 @@ html{
   background-color: hsla(0, 0%, 37%, 0.267);
 }
 .navbar-item {
+  background-color: #333333;
   color: hsl(0, 0%, 100%);
 }
 *:is(p, h1, h2){
@@ -41,48 +44,66 @@ html{
 *:is(h1, h2){
   text-align: center;
 }
-
+.hi {
+  color: white;
+}
 
   </style>
   
 </head>
 <body style="background-color:black;">
-  <nav class="navbar is-fixed-top is-active">  
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="/">
-          Home
-        </a>
-        <a class="navbar-item" href="/privacy-policy.html">
-          Privacy Policy
-        </a>
-        <a class="navbar-item" href="/support.html">
-          Support
-        </a>
-      </div>
+  <nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <span class="navbar-burger burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <span class="navbar-item">
+                    <a class="button is-white is-outlined" href="/">
+                        <span class="icon">
+                            <i class="fa fa-home"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </span>
+                <span class="navbar-item">
+                    <a class="button is-white is-outlined" href="/privacy-policy.html">
+                        <span class="icon">
+                            <i class="fa fa-superpowers"></i>
+                        </span>
+                        <span>Privacy Policy</span>
+                    </a>
+                </span>
+                <span class="navbar-item">
+                    <a class="button is-white is-outlined" href="/support.html">
+                        <span class="icon">
+                            <i class="fa fa-book"></i>
+                        </span>
+                        <span>Support</span>
+                    </a>
+                </span>
+            </div>
+        </div>
     </div>
-  </nav>
+</nav>
 
   <br>
-  <br>
-  <br>
-
-  <br>
-  <div class="has-text-centered">
-  <!-- <figure class="is-inline-block"> <img src="Logo_main.png" height="80%" width="80%"></figure> -->
-</div>
   <!-- <p style="color: white; size: 18;  text-align: center; font-weight: 700; font-family: inter">THE SOCIAL REVIEW PLATFORM</p> -->
   <!-- <br>
   <br> -->
-  <center>
-  <h1>Privacy Policy</h1>
+  <h1 class="title hi">Privacy Policy</h1>
     <p>
       At Hot Takes, we take your privacy very seriously. This policy outlines how we collect, use, and protect your personal information on our map-based social audio platform.
     </p>
     <p>
       The short version is: everything we collect is anonymized on the server. What we collect includes the content you share (takes), your phone number, your contacts, and your username. The takes you share are analyzed by AI, so we use transcription information from them in our models. The voice and photo content, however, can only be seen by your friends. The transcripts of your takes are anonymized and analyzed, and those may be summarized and shown to other users. 
     </p>
-  <h2>Data Collection</h2>
+  <h2 class="subtitle hi">Data Collection</h2>
     <p>
       When you sign up for Hot Takes, we collect personal information that you provide us with, such as your name and phone number. We also collect information about your device, including your IP address, device type, and operating system.
     </p>
@@ -92,7 +113,7 @@ html{
     <p>
       We do not collect any sensitive data from users. Any data collected from users, such as the items listed above, are fully anonymized on our servers/in our backend. More specifically, your contacts are only collected to show you suggested friends. We do not use your phone number for anything other than authentication. 
     </p>
-  <h2>Data Usage</h2>
+  <h2 class="subtitle hi">Data Usage</h2>
   <p>
     We use the data we collect to provide you with the best user experience possible. This includes personalizing your account, sending you notifications, and improving our services. We do not share any data linked to you with outside sources. All data used on our backend, such as for recommendations, is anonymized.
   </p>
@@ -106,7 +127,7 @@ html{
   <p>
     The only platforms whom we share your location data with is the Google Maps Platform APIs. You can read about their privacy policy <a href="https://policies.google.com/privacy">here</a>.
   </p>
-  <h2>
+  <h2 class="subtitle hi">
     
     Data Protection
   </h2>
@@ -125,7 +146,7 @@ html{
   <p>
     If a user would like us to delete their data, we will comply, please just reach out to our support email: hello@hottakes.social. We keep user data for up to one month after a user deletes their account. 
   </p>
-  <h2>
+  <h2 class="subtitle hi">
     
     Changes to Policy
   </h2>
@@ -133,7 +154,7 @@ html{
     
     We reserve the right to make changes to this privacy policy at any time. Any changes will be posted on our website and will take effect immediately.
   </p>
-  <h2>
+  <h2 class="subtitle hi">
     
     Contact Us
   </h2>
@@ -141,7 +162,7 @@ html{
     
     If you have any questions or concerns about our privacy policy, please contact us at hello@hottakes.social
   </p>
-</center>
+<script async type="text/javascript" src="./bulma.js"></script>
  
 </body>
 </html>
